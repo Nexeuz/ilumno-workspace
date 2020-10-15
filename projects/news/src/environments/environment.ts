@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  host: 'https://cms.qailumno.com',
+  host: 'https://cms.qailumno.com/servicios',
 
 };
 
