@@ -1,2 +1,3 @@
 <h1>Bienvenido a nuestro portal de noticias</h1>
-<ilum-news></ilum-news>
+<ilum-news *ngFor="let new of news$ | async" [new]="new">
+</ilum-news>
