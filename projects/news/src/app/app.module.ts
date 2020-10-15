@@ -7,11 +7,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {CoreModule} from './core/core.module';
 import { HomeComponent } from './pages/home/home.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
