@@ -1,0 +1,33 @@
+<div class="register-container">
+  <form [formGroup]="form" (ngSubmit)="submit()" class="register-container__form">
+    <fieldset class="register-container__form__fields">
+      <label>
+        <input
+          formControlName="name"
+          aria-labelledby="Programa de interés"
+          type="text"
+          placeholder="Nombre">
+      </label>
+      <label>
+        <select
+          formControlName="interestProgram"
+          aria-labelledby="Programa de interés">
+          <option value=""> Seleccione una carrera</option>
+          <option [value]="program.id" *ngFor="let program of programs$ | async">
+            {{ program.name }}
+          </option>
+        </select>
+      </label>
+      <label>
+        <textarea
+          formControlName="comment"
+          placeholder="Comentario"
+          aria-labelledby="Comentario"></textarea>
+      </label>
+      <button [disabled]="form.invalid" aria-labelledby="Ingresa" type="submit">
+        Registrarme
+      </button>
+    </fieldset>
+  </form>
+
+</div>

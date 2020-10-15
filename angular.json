@@ -123,9 +123,11 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
-    "analytics": "e56fcb6b-cd5e-490e-8c39-ae3917a79d35"
+    "analytics": "e56fcb6b-cd5e-490e-8c39-ae3917a79d35",
+    "defaultCollection": "@ngrx/schematics"
   },
   "defaultProject": "news"
 }
